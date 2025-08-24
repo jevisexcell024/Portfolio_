@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jevislab - Frontend Developer Portfolio</title>
+    <meta name="description"
+        content="Premium frontend developer portfolio showcasing cutting-edge web development skills, interactive projects, and technical expertise." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevfoliop2501back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script> -->
+</head>
+
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="interactive_homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z" />
+                            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none" />
+                        </svg>
+                        <span class="text-xl font-bold text-primary">Jevislab</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="interactive_homepage.html"
+                            class="text-primary font-medium border-b-2 border-accent px-3 py-2">Home</a>
+                        <a href="about_philosophy.html"
+                            class="text-text-secondary hover:text-primary transition-fast px-3 py-2">About</a>
+                        <a href="project_showcase.html"
+                            class="text-text-secondary hover:text-primary transition-fast px-3 py-2">Projects</a>
+                        <a href="skills_laboratory.html"
+                            class="text-text-secondary hover:text-primary transition-fast px-3 py-2">Skills Lab</a>
+                        <a href="developer_toolkit.html"
+                            class="text-text-secondary hover:text-primary transition-fast px-3 py-2">Toolkit</a>
+                        <a href="contact_availability.html" class="btn-primary">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="interactive_homepage.html"
+                    class="block px-3 py-2 text-primary font-medium bg-surface rounded-md">Home</a>
+                <a href="about_philosophy.html"
+                    class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">About</a>
+                <a href="project_showcase.html"
+                    class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">Projects</a>
+                <a href="skills_laboratory.html"
+                    class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">Skills Lab</a>
+                <a href="developer_toolkit.html"
+                    class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">Toolkit</a>
+                <a href="contact_availability.html" class="block px-3 py-2 btn-primary text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Code Animation -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-background via-surface to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="hero-animation">
+                    <div class="mb-6">
+                        <span
+                            class="inline-block px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full mb-4">
+                            Available for new projects
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-4">
+                            Frontend Developer
+                            <span class="text-gradient block">& UI/UX Designer</span>
+                        </h1>
+                        <p class="text-lg text-text-secondary mb-8 max-w-lg">
+                            Transforming complex ideas into intuitive digital experiences through clean code, innovative
+                            design, and user-centered development.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="project_showcase.html" class="btn-primary inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                            View Projects
+                        </a>
+                        <a href="contact_availability.html"
+                            class="btn-secondary inline-flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            Let's Talk
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">17+</div>
+                            <div class="text-sm text-text-secondary">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">3+</div>
+                            <div class="text-sm text-text-secondary">Years Exp</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-primary">90%</div>
+                            <div class="text-sm text-text-secondary">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Animation -->
+                <div class="relative">
+                    <div class="bg-primary rounded-lg p-6 shadow-card">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                            </div>
+                            <span class="text-text-secondary text-sm">portfolio.js</span>
+                        </div>
+                        <div class="font-mono text-sm text-white">
+                            <div class="text-accent">const</div>
+                            <div class="typing-animation text-white" id="typing-text">developer = new JevisLab
+                                (Jephthah);</div>
+                            <div class="mt-2 opacity-0" id="code-line-2">developer.skills = ['React', 'JavaScript',
+                                'Html'];</div>
+                            <div class="mt-1 opacity-0" id="code-line-3">developer.passion = 'Creating amazing UX';
+                            </div>
+                            <div class="mt-1 opacity-0" id="code-line-4">developer.status = 'Available for hire';</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="jevislab">
+
+<div class="flex">
+    <div class="jevislab-text">
+        <h2 class="">About Me</h2>
+        <p class="text-lg text-text-secondary mb-6">
+            Welcome to Jevislab, where innovation meets creativity in the world of frontend development. I am
+            dedicated to crafting seamless digital experiences that captivate users and drive engagement. With a
+            passion for clean code and intuitive design, I transform complex ideas into elegant solutions.
+        </p>
+        <a href="about_philosophy.html" class="btn-accent inline-flex items-center">
+            Learn More About Me
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+        </a>
+    </div>
+    <div class="jevislab-image">
+        <img src="/Images/GTA.png" alt="Jevislab Illustration" class="w-full h-auto rounded-lg shadow-lg"
+            loading="lazy"
+            onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+    </div>
+</div>
+
+</section>
+
+
+
+
+    <!-- Featured Projects Carousel -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Featured Projects</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    A showcase of recent work demonstrating technical expertise and creative problem-solving
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/Images/Fish .png"
+                            alt="E-commerce Dashboard"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            onerror="this.src='https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div
+                            class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://fish-project-three.vercel.app/" class="btn-accent">View Details</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">React</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">TypeScript</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Tailwind</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">Fish Project</h3>
+                    <p class="text-text-secondary mb-4">Discover the intricate relationships between ocean creatures and their environment. </p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span>124 stars</span>
+                        </div>
+                        <div>Live: 2k users</div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/Images/Spraystore.png"
+                            alt="Task Management App"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                        <div
+                            class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://dev-perfume-store-spray.pantheonsite.io/" class="btn-accent">View Details</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Wordpress</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Elementor</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">WooCommerce</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">Spray Store</h3>
+                    <p class="text-text-secondary mb-4">Ancient texts and archaeological excavations show the use of perfumes in some of the earliest human civilizations.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span>89 stars</span>
+                        </div>
+                        <div>Live: 1.8k users</div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card group hover:shadow-card-hover transition-all duration-300">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="/Images/GTA.png"
+                            alt="Portfolio Website"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2574&auto=format&fit=crop'; this.onerror=null;" />
+                        <div
+                            class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://full-gta-vi.vercel.app/" class="btn-accent">View Details</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Next.js</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Framer
+                            Motion</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Vercel</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">GTA VI Landing Page </h3>
+                    <p class="text-text-secondary mb-4">Life has been coming at her swinging ever since. Fighting for her family landed her in the Leonida Penitentiary.</p>
+                    <div class="flex items-center justify-between text-sm text-text-secondary">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <span>156 stars</span>
+                        </div>
+                        <div>98% Performance</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="project_showcase.html" class="btn-secondary inline-flex items-center">
+                    View All Projects
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Skills Visualization -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Technical Expertise</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Proficiency levels in modern frontend technologies and development tools
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- React -->
+                <div class="text-center">
+                    <div class="relative w-24 h-24 mx-auto mb-4">
+                        <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke="#e2e8f0" stroke-width="8" fill="none" />
+                            <circle cx="50" cy="50" r="40" stroke="#00d4ff" stroke-width="8" fill="none"
+                                stroke-dasharray="251.2" stroke-dashoffset="50.24"
+                                class="transition-all duration-1000" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-xl font-bold text-primary">95%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">HTML</h3>
+                    <p class="text-sm text-text-secondary">Advanced hooks, context, performance optimization</p>
+                </div>
+
+                <!-- Vue.js -->
+                <div class="text-center">
+                    <div class="relative w-24 h-24 mx-auto mb-4">
+                        <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke="#e2e8f0" stroke-width="8" fill="none" />
+                            <circle cx="50" cy="50" r="40" stroke="#38a169" stroke-width="8" fill="none"
+                                stroke-dasharray="251.2" stroke-dashoffset="75.36"
+                                class="transition-all duration-1000" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-xl font-bold text-primary">90%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">GSAP</h3>
+                    <p class="text-sm text-text-secondary">ScrollTrigger Animation</p>
+                </div>
+
+                <!-- TypeScript -->
+                <div class="text-center">
+                    <div class="relative w-24 h-24 mx-auto mb-4">
+                        <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke="#e2e8f0" stroke-width="8" fill="none" />
+                            <circle cx="50" cy="50" r="40" stroke="#ed8936" stroke-width="8" fill="none"
+                                stroke-dasharray="251.2" stroke-dashoffset="100.92"
+                                class="transition-all duration-1000" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-xl font-bold text-primary">85%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">JAVASCRIPT</h3>
+                    <p class="text-sm text-text-secondary">Advanced types, generics, strict mode</p>
+                </div>
+
+                <!-- Node.js -->
+                <div class="text-center">
+                    <div class="relative w-24 h-24 mx-auto mb-4">
+                        <svg class="w-24 h-24 transform -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="40" stroke="#e2e8f0" stroke-width="8" fill="none" />
+                            <circle cx="50" cy="50" r="40" stroke="#38a169" stroke-width="8" fill="none"
+                                stroke-dasharray="251.2" stroke-dashoffset="100.48"
+                                class="transition-all duration-1000" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-xl font-bold text-primary">70%</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">WORDPRESS</h3>
+                    <p class="text-sm text-text-secondary">Express, APIs, database integration</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="skills_laboratory.html" class="btn-accent inline-flex items-center">
+                    Explore Skills Lab
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Building Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Currently Building</h2>
+                <p class="text-lg text-text-secondary">
+                    Real-time updates from my development workspace
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Work in Progress 1 -->
+                <div class="card">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Podsync Pro Management System</h3>
+                            <p class="text-text-secondary mb-3">Building an Automatedd file text transcipt</p>
+                        </div>
+                        <span class="px-3 py-1 bg-warning/10 text-warning text-sm font-medium rounded-full">In
+                            Progress</span>
+                    </div>
+
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span>Latest commit: 2 hours ago</span>
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            <span>Progress: 65% complete</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Python</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">TensorFlow</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">React</span>
+                    </div>
+                </div>
+
+                <!-- Work in Progress 2 -->
+                <div class="card">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">GTA VI Page With GSAP</h3>
+                            <p class="text-text-secondary mb-3">Building GTA VI landing page with basic react</p>
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-success/10 text-success text-sm font-medium rounded-full">Completed</span>
+                    </div>
+
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span>Latest commit: 5 hours ago</span>
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            <span>Progress: 100% complete</span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">React</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Storybook</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Figma</span>
+                    </div>
+                </div>
+
+                 <!-- work duplicated  -->
+                <div class="card">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Animals Vault Project </h3>
+                            <p class="text-text-secondary mb-3">Building GTA VI landing page with basic react</p>
+                        </div>
+                        <span
+                            class="px-3 py-1 bg-success/10 text-success text-sm font-medium rounded-full">Halted</span>
+                    </div>
+
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span>Latest commit: 5 hours ago</span>
+                        </div>
+                        <div class="flex items-center text-sm text-text-secondary">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                            <span>Progress: 100% complete</span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">React</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Storybook</span>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Client Logos -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-semibold text-primary mb-8">Trusted by Leading Companies</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
+                    <div class="flex justify-center">
+                        <svg class="h-8 text-text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <rect x="10" y="10" width="20" height="20" rx="4" />
+                            <text x="40" y="25" font-family="Inter" font-size="14" font-weight="600">G Online </text>
+                        </svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <svg class="h-8 text-text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <circle cx="20" cy="20" r="10" />
+                            <text x="40" y="25" font-family="Inter" font-size="14" font-weight="600">GiGWisp</text>
+                        </svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <svg class="h-8 text-text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <polygon points="10,30 20,10 30,30" />
+                            <text x="40" y="25" font-family="Inter" font-size="14" font-weight="600">Noodles
+                                Project</text>
+                        </svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <svg class="h-8 text-text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <rect x="10" y="15" width="20" height="10" rx="5" />
+                            <text x="40" y="25" font-family="Inter" font-size="14" font-weight="600">Jem Afrik </text>
+                        </svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <svg class="h-8 text-text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <path d="M15 10 L25 20 L15 30 L10 25 L15 20 L10 15 Z" />
+                            <text x="40" y="25" font-family="Inter" font-size="14" font-weight="600">DTI</text>
+                        </svg>
+                    </div>
+                    <div class="flex justify-center">
+                        <svg class="h-8 text-text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <rect x="10" y="10" width="20" height="20" rx="10" />
+                            <text x="40" y="25" font-family="Inter" font-size="14" font-weight="600">MetalMall</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                            alt="Client testimonial" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy"
+                            onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Sarah Johnson</h4>
+                            <p class="text-sm text-text-secondary">CTO, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Exceptional frontend skills and attention to detail. Delivered our project ahead of schedule
+                        with outstanding quality."
+                    </p>
+                    <div class="flex text-warning">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Client testimonial" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy"
+                            onerror="this.src='https://images.pixabay.com/photo/2016/11/18/19/07/happy-1836445_1280.jpg'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">Michael Chen</h4>
+                            <p class="text-sm text-text-secondary">Founder, StartupX</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Transformed our vision into a beautiful, functional web application. Great communication
+                        throughout the project."
+                    </p>
+                    <div class="flex text-warning">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pixabay.com/photo/2017/06/26/02/47/man-2442565_1280.jpg"
+                            alt="Client testimonial" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy"
+                            onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-primary">David Rodriguez</h4>
+                            <p class="text-sm text-text-secondary">Lead Designer, InnovateLab</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Perfect implementation of our designs with thoughtful improvements. A true professional who
+                        cares about the craft."
+                    </p>
+                    <div class="flex text-warning">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">
+                    Let's discuss how we can bring your vision to life with cutting-edge frontend development
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Resume Download -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Download Resume</h3>
+                    <p class="opacity-90 mb-4">Get a comprehensive overview of my experience and skills</p>
+                    <a href="javascript:void(0)" class="btn-accent">Download PDF</a>
+                </div>
+
+                <!-- Schedule Call -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Schedule a Call</h3>
+                    <p class="opacity-90 mb-4">Book a free consultation to discuss your project needs</p>
+                    <a href="contact_availability.html" class="btn-accent">Book Meeting</a>
+                </div>
+
+                <!-- Direct Message -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Send Message</h3>
+                    <p class="opacity-90 mb-4">Get in touch directly for quick questions or project inquiries</p>
+                    <a href="contact_availability.html" class="btn-accent">Contact Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z" />
+                            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none" />
+                        </svg>
+                        <span class="text-xl font-bold">JevisLab</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Frontend Developer & Digital Craftsman specializing in creating exceptional user experiences
+                        through clean code and innovative design.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="project_showcase.html"
+                                class="text-gray-300 hover:text-accent transition-fast">Projects</a></li>
+                        <li><a href="skills_laboratory.html"
+                                class="text-gray-300 hover:text-accent transition-fast">Skills Lab</a></li>
+                        <li><a href="about_philosophy.html"
+                                class="text-gray-300 hover:text-accent transition-fast">About</a></li>
+                        <li><a href="developer_toolkit.html"
+                                class="text-gray-300 hover:text-accent transition-fast">Toolkit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            hello@devfolio.pro
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 DevFolio Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Code typing animation
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(() => {
+                document.getElementById('code-line-2').style.opacity = '1';
+            }, 2000);
+
+            setTimeout(() => {
+                document.getElementById('code-line-3').style.opacity = '1';
+            }, 3000);
+
+            setTimeout(() => {
+                document.getElementById('code-line-4').style.opacity = '1';
+            }, 4000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+    <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+
+</html>

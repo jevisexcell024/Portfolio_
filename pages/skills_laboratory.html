@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Laboratory - DevFolio Pro</title>
+    <meta name="description" content="Interactive playground demonstrating technical capabilities through live code examples, mini-applications, and skill proficiency matrix." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdevfoliop2501back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="interactive_homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold text-primary">DevFolio Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="interactive_homepage.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2">Home</a>
+                        <a href="project_showcase.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2">Projects</a>
+                        <a href="skills_laboratory.html" class="text-primary font-medium border-b-2 border-accent px-3 py-2">Skills Lab</a>
+                        <a href="about_philosophy.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2">About</a>
+                        <a href="developer_toolkit.html" class="text-text-secondary hover:text-primary transition-fast px-3 py-2">Toolkit</a>
+                        <a href="contact_availability.html" class="btn-primary">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="interactive_homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">Home</a>
+                <a href="project_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">Projects</a>
+                <a href="skills_laboratory.html" class="block px-3 py-2 text-primary font-medium bg-surface rounded-md">Skills Lab</a>
+                <a href="about_philosophy.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">About</a>
+                <a href="developer_toolkit.html" class="block px-3 py-2 text-text-secondary hover:text-primary transition-fast">Toolkit</a>
+                <a href="contact_availability.html" class="block px-3 py-2 btn-primary text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-background via-surface to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="mb-6">
+                    <span class="inline-block px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full mb-4">
+                        🧪 Interactive Playground
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-4">
+                        Skills Laboratory
+                        <span class="text-gradient block">Live Code Demonstrations</span>
+                    </h1>
+                    <p class="text-lg text-text-secondary mb-8 max-w-3xl mx-auto">
+                        Explore my technical capabilities through interactive demos, code samples, and real-time skill assessments. This is where theory meets practice.
+                    </p>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">15+</div>
+                        <div class="text-sm text-text-secondary">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">8</div>
+                        <div class="text-sm text-text-secondary">Frameworks</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">12</div>
+                        <div class="text-sm text-text-secondary">Certifications</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">5+</div>
+                        <div class="text-sm text-text-secondary">Years Learning</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Technical Proficiency Matrix</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Real-time assessment of my technical capabilities across different domains
+                </p>
+            </div>
+
+            <!-- Frontend Frameworks -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-primary mb-6">Frontend Frameworks</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- React -->
+                    <div class="card group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop" alt="React" class="w-8 h-8 rounded mr-3" loading="lazy" onerror="this.src='https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <h4 class="text-lg font-semibold text-primary">React</h4>
+                            </div>
+                            <span class="text-2xl font-bold text-accent">95%</span>
+                        </div>
+                        
+                        <div class="w-full bg-border rounded-full h-2 mb-4">
+                            <div class="bg-accent h-2 rounded-full transition-all duration-1000" style="width: 95%"></div>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm mb-4">Advanced hooks, context, performance optimization, testing</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Hooks & Context</span>
+                                <span class="text-success">Expert</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Performance</span>
+                                <span class="text-success">Advanced</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Testing</span>
+                                <span class="text-warning">Proficient</span>
+                            </div>
+                        </div>
+                        
+                        <button class="mt-4 text-accent text-sm font-medium hover:underline" onclick="toggleCodeSample('react-sample')">
+                            View Code Sample →
+                        </button>
+                        
+                        <div id="react-sample" class="hidden mt-4 code-block">
+                            <pre class="text-xs"><code>// Custom Hook Example
+const useLocalStorage = (key, initialValue) => {
+  const [storedValue, setStoredValue] = useState(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      return initialValue;
+    }
+  });
+
+  const setValue = (value) => {
+    try {
+      setStoredValue(value);
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  return [storedValue, setValue];
+};</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Vue.js -->
+                    <div class="card group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Vue.js" class="w-8 h-8 rounded mr-3" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2021/09/08/08/56/icon-6608655_1280.png'; this.onerror=null;" />
+                                <h4 class="text-lg font-semibold text-primary">Vue.js</h4>
+                            </div>
+                            <span class="text-2xl font-bold text-accent">90%</span>
+                        </div>
+                        
+                        <div class="w-full bg-border rounded-full h-2 mb-4">
+                            <div class="bg-success h-2 rounded-full transition-all duration-1000" style="width: 90%"></div>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm mb-4">Composition API, Vuex, Nuxt.js ecosystem</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Composition API</span>
+                                <span class="text-success">Expert</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Vuex/Pinia</span>
+                                <span class="text-success">Advanced</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Nuxt.js</span>
+                                <span class="text-warning">Proficient</span>
+                            </div>
+                        </div>
+                        
+                        <button class="mt-4 text-accent text-sm font-medium hover:underline" onclick="toggleCodeSample('vue-sample')">
+                            View Code Sample →
+                        </button>
+                        
+                        <div id="vue-sample" class="hidden mt-4 code-block">
+                            <pre class="text-xs"><code>// Vue 3 Composition API
+import { ref, computed, onMounted } from 'vue'
+
+export default {
+  setup() {
+    const count = ref(0)
+    const doubleCount = computed(() => count.value * 2)
+    
+    const increment = () => {
+      count.value++
+    }
+    
+    onMounted(() => {
+      console.log('Component mounted!')
+    })
+    
+    return {
+      count,
+      doubleCount,
+      increment
+    }
+  }
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <!-- Angular -->
+                    <div class="card group">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <img src="https://images.pixabay.com/photo/2021/09/08/08/56/icon-6608660_1280.png" alt="Angular" class="w-8 h-8 rounded mr-3" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop'; this.onerror=null;" />
+                                <h4 class="text-lg font-semibold text-primary">Angular</h4>
+                            </div>
+                            <span class="text-2xl font-bold text-accent">75%</span>
+                        </div>
+                        
+                        <div class="w-full bg-border rounded-full h-2 mb-4">
+                            <div class="bg-warning h-2 rounded-full transition-all duration-1000" style="width: 75%"></div>
+                        </div>
+                        
+                        <p class="text-text-secondary text-sm mb-4">Components, services, RxJS, TypeScript integration</p>
+                        
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Components</span>
+                                <span class="text-success">Advanced</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">RxJS</span>
+                                <span class="text-warning">Proficient</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-text-secondary">Testing</span>
+                                <span class="text-warning">Learning</span>
+                            </div>
+                        </div>
+                        
+                        <button class="mt-4 text-accent text-sm font-medium hover:underline" onclick="toggleCodeSample('angular-sample')">
+                            View Code Sample →
+                        </button>
+                        
+                        <div id="angular-sample" class="hidden mt-4 code-block">
+                            <pre class="text-xs"><code>// Angular Service with RxJS
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  private apiUrl = 'https://api.example.com';
+  
+  constructor(private http: HttpClient) {}
+  
+  getData(): Observable&lt;any[]&gt; {
+    return this.http.get&lt;any[]&gt;(`${this.apiUrl}/data`)
+      .pipe(
+        retry(3),
+        catchError(this.handleError)
+      );
+  }
+  
+  private handleError(error: any): Observable&lt;never&gt; {
+    console.error('An error occurred:', error);
+    return throwError(error);
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages & Tools -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-primary mb-6">Languages & Tools</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- JavaScript -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-warning" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary mb-2">JavaScript</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">98%</div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 98%"></div>
+                        </div>
+                    </div>
+
+                    <!-- TypeScript -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary mb-2">TypeScript</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">85%</div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-warning h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-success" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary mb-2">Python</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">70%</div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-success" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.570,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-primary mb-2">Node.js</h4>
+                        <div class="text-2xl font-bold text-accent mb-2">80%</div>
+                        <div class="w-full bg-border rounded-full h-2">
+                            <div class="bg-success h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demos -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Interactive Demonstrations</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Live examples showcasing specific technical capabilities and problem-solving approaches
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- React Component Builder -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-primary">React Component Builder</h3>
+                        <span class="px-3 py-1 bg-success/10 text-success text-sm font-medium rounded-full">Live Demo</span>
+                    </div>
+                    
+                    <p class="text-text-secondary mb-6">Interactive tool for building React components with real-time preview</p>
+                    
+                    <div class="bg-primary rounded-lg p-4 mb-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <div class="flex space-x-2">
+                                <div class="w-3 h-3 bg-error rounded-full"></div>
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                            </div>
+                            <span class="text-white text-sm">ComponentBuilder.jsx</span>
+                        </div>
+                        
+                        <div class="bg-secondary rounded p-3">
+                            <div class="text-white font-mono text-sm">
+                                <div class="text-accent">const</div>
+                                <div class="text-white">Button = ({ children, variant = 'primary' }) => {</div>
+                                <div class="text-white ml-4">return (</div>
+                                <div class="text-white ml-8">&lt;button className={`btn-${variant}`}&gt;</div>
+                                <div class="text-white ml-12">{children}</div>
+                                <div class="text-white ml-8">&lt;/button&gt;</div>
+                                <div class="text-white ml-4">);</div>
+                                <div class="text-white">};</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-background border border-border rounded-lg p-4 mb-4">
+                        <h4 class="text-sm font-semibold text-primary mb-3">Live Preview:</h4>
+                        <div class="space-x-3">
+                            <button class="btn-primary">Primary Button</button>
+                            <button class="btn-secondary">Secondary Button</button>
+                            <button class="btn-accent">Accent Button</button>
+                        </div>
+                    </div>
+                    
+                    <a href="javascript:void(0)" class="btn-accent w-full text-center">Launch Full Demo</a>
+                </div>
+
+                <!-- CSS Animation Playground -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-primary">CSS Animation Playground</h3>
+                        <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Interactive</span>
+                    </div>
+                    
+                    <p class="text-text-secondary mb-6">Experiment with CSS animations and transitions in real-time</p>
+                    
+                    <div class="bg-background border border-border rounded-lg p-6 mb-4">
+                        <div class="flex justify-center mb-4">
+                            <div id="animation-demo" class="w-16 h-16 bg-accent rounded-lg transition-all duration-500 transform hover:scale-110 hover:rotate-12"></div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3">
+                            <button class="btn-secondary text-sm" onclick="animateBox('bounce')">Bounce</button>
+                            <button class="btn-secondary text-sm" onclick="animateBox('spin')">Spin</button>
+                            <button class="btn-secondary text-sm" onclick="animateBox('pulse')">Pulse</button>
+                            <button class="btn-secondary text-sm" onclick="animateBox('shake')">Shake</button>
+                        </div>
+                    </div>
+                    
+                    <div class="code-block mb-4">
+                        <pre class="text-xs"><code>/* CSS Animation Example */
+.bounce {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}</code></pre>
+                    </div>
+                    
+                    <a href="javascript:void(0)" class="btn-accent w-full text-center">Open Playground</a>
+                </div>
+
+                <!-- API Integration Demo -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-primary">API Integration Demo</h3>
+                        <span class="px-3 py-1 bg-warning/10 text-warning text-sm font-medium rounded-full">Async</span>
+                    </div>
+                    
+                    <p class="text-text-secondary mb-6">Real-time data fetching with error handling and loading states</p>
+                    
+                    <div class="bg-background border border-border rounded-lg p-4 mb-4">
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="text-sm font-semibold text-primary">GitHub User Data</h4>
+                            <button id="fetch-btn" class="btn-accent text-sm" onclick="fetchGitHubData()">Fetch Data</button>
+                        </div>
+                        
+                        <div id="api-result" class="text-sm text-text-secondary">
+                            Click "Fetch Data" to load GitHub user information
+                        </div>
+                    </div>
+                    
+                    <div class="code-block mb-4">
+                        <pre class="text-xs"><code>// Async/Await API Call
+const fetchUserData = async (username) => {
+  try {
+    setLoading(true);
+    const response = await fetch(`/api/users/${username}`);
+    const data = await response.json();
+    setUser(data);
+  } catch (error) {
+    setError(error.message);
+  } finally {
+    setLoading(false);
+  }
+};</code></pre>
+                    </div>
+                    
+                    <a href="javascript:void(0)" class="btn-accent w-full text-center">View Full Implementation</a>
+                </div>
+
+                <!-- Responsive Design Tester -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-semibold text-primary">Responsive Design Tester</h3>
+                        <span class="px-3 py-1 bg-success/10 text-success text-sm font-medium rounded-full">Responsive</span>
+                    </div>
+                    
+                    <p class="text-text-secondary mb-6">Test responsive layouts across different screen sizes</p>
+                    
+                    <div class="bg-background border border-border rounded-lg p-4 mb-4">
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <button class="btn-secondary text-xs" onclick="setViewport('mobile')">📱 Mobile</button>
+                            <button class="btn-secondary text-xs" onclick="setViewport('tablet')">📱 Tablet</button>
+                            <button class="btn-secondary text-xs" onclick="setViewport('desktop')">💻 Desktop</button>
+                        </div>
+                        
+                        <div id="viewport-demo" class="bg-surface border border-border rounded transition-all duration-300" style="width: 100%; height: 120px;">
+                            <div class="p-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                                    <div class="bg-accent/20 rounded p-2 text-xs text-center">Card 1</div>
+                                    <div class="bg-accent/20 rounded p-2 text-xs text-center">Card 2</div>
+                                    <div class="bg-accent/20 rounded p-2 text-xs text-center">Card 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-block mb-4">
+                        <pre class="text-xs"><code>/* Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}</code></pre>
+                    </div>
+                    
+                    <a href="javascript:void(0)" class="btn-accent w-full text-center">Launch Tester</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Challenges -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Code Challenges & Solutions</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Popular algorithms and frontend problems solved with multiple approaches and explanations
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Algorithm Challenge -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-primary">Two Sum Problem</h3>
+                        <span class="px-2 py-1 bg-success/10 text-success text-xs font-medium rounded">Easy</span>
+                    </div>
+                    
+                    <p class="text-text-secondary text-sm mb-4">
+                        Given an array of integers and a target sum, return indices of two numbers that add up to the target.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <!-- Approach 1 -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-sm font-semibold text-primary">Approach 1: Brute Force</h4>
+                                <span class="text-xs text-text-secondary">O(n²)</span>
+                            </div>
+                            <div class="code-block">
+                                <pre class="text-xs"><code>function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+  return [];
+}</code></pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Approach 2 -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-sm font-semibold text-primary">Approach 2: Hash Map</h4>
+                                <span class="text-xs text-text-secondary">O(n)</span>
+                            </div>
+                            <div class="code-block">
+                                <pre class="text-xs"><code>function twoSum(nums, target) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (map.has(complement)) {
+      return [map.get(complement), i];
+    }
+    map.set(nums[i], i);
+  }
+  return [];
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Challenge -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-primary">Debounce Implementation</h3>
+                        <span class="px-2 py-1 bg-warning/10 text-warning text-xs font-medium rounded">Medium</span>
+                    </div>
+                    
+                    <p class="text-text-secondary text-sm mb-4">
+                        Implement a debounce function that delays execution until after a specified time has passed.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <!-- Implementation -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-sm font-semibold text-primary">Implementation</h4>
+                                <span class="text-xs text-text-secondary">Closure Pattern</span>
+                            </div>
+                            <div class="code-block">
+                                <pre class="text-xs"><code>function debounce(func, delay) {
+  let timeoutId;
+  
+  return function (...args) {
+    clearTimeout(timeoutId);
+    
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+}
+
+// Usage Example
+const debouncedSearch = debounce((query) => {
+  console.log('Searching for:', query);
+}, 300);
+
+// Will only execute once after 300ms
+debouncedSearch('react');
+debouncedSearch('react hooks');
+debouncedSearch('react hooks tutorial');</code></pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Live Demo -->
+                        <div class="bg-background border border-border rounded-lg p-4">
+                            <h4 class="text-sm font-semibold text-primary mb-2">Live Demo:</h4>
+                            <input type="text" placeholder="Type to see debounce in action..." class="w-full px-3 py-2 border border-border rounded-md text-sm" onkeyup="debouncedLog(this.value)" />
+                            <div id="debounce-output" class="mt-2 text-xs text-text-secondary">
+                                Start typing to see debounced output...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React Pattern -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-primary">Custom Hook Pattern</h3>
+                        <span class="px-2 py-1 bg-accent/10 text-accent text-xs font-medium rounded">React</span>
+                    </div>
+                    
+                    <p class="text-text-secondary text-sm mb-4">
+                        Create a reusable custom hook for managing API calls with loading and error states.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre class="text-xs"><code>import { useState, useEffect } from 'react';
+
+function useApi(url) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const result = await response.json();
+        setData(result);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [url]);
+
+  return { data, loading, error };
+}
+
+// Usage in component
+function UserProfile({ userId }) {
+  const { data: user, loading, error } = useApi(`/api/users/${userId}`);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!user) return <div>No user found</div>;
+
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+    </div>
+  );
+}</code></pre>
+                    </div>
+                </div>
+
+                <!-- Performance Optimization -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-primary">Virtual Scrolling</h3>
+                        <span class="px-2 py-1 bg-error/10 text-error text-xs font-medium rounded">Advanced</span>
+                    </div>
+                    
+                    <p class="text-text-secondary text-sm mb-4">
+                        Implement virtual scrolling for large lists to maintain performance with thousands of items.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre class="text-xs"><code>function VirtualList({ items, itemHeight = 50, containerHeight = 400 }) {
+  const [scrollTop, setScrollTop] = useState(0);
+  
+  const visibleCount = Math.ceil(containerHeight / itemHeight);
+  const startIndex = Math.floor(scrollTop / itemHeight);
+  const endIndex = Math.min(startIndex + visibleCount, items.length);
+  
+  const visibleItems = items.slice(startIndex, endIndex);
+  const totalHeight = items.length * itemHeight;
+  const offsetY = startIndex * itemHeight;
+
+  return (
+    <div style="{{" height: containerHeight, overflow: 'auto' }} onScroll="{(e)" => setScrollTop(e.target.scrollTop)}
+    >
+      <div style="{{" height: totalHeight, position: 'relative' }}>
+        <div style="{{" transform: `translateY(${offsetY}px)` }}>
+          {visibleItems.map((item, index) => (
+            <div key="{startIndex" + index} style="{{" height: itemHeight }} className="border-b border-gray-200 p-2">
+              {item.name} - Item #{startIndex + index}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Learning -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Certifications & Continuous Learning</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Professional certifications and ongoing education that validate technical expertise
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Masters -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Frontend Masters</h3>
+                    <p class="text-text-secondary text-sm mb-3">Complete Intro to React v8</p>
+                    <div class="flex items-center justify-center text-xs text-text-secondary mb-3">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Completed: Dec 2024
+                    </div>
+                    <span class="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">Verified</span>
+                </div>
+
+                <!-- AWS -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">AWS Certified</h3>
+                    <p class="text-text-secondary text-sm mb-3">Cloud Practitioner</p>
+                    <div class="flex items-center justify-center text-xs text-text-secondary mb-3">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Expires: Nov 2027
+                    </div>
+                    <span class="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">Active</span>
+                </div>
+
+                <!-- Google -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Google Analytics</h3>
+                    <p class="text-text-secondary text-sm mb-3">Individual Qualification</p>
+                    <div class="flex items-center justify-center text-xs text-text-secondary mb-3">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Renewed: Jan 2025
+                    </div>
+                    <span class="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">Current</span>
+                </div>
+
+                <!-- University Course -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Stanford Online</h3>
+                    <p class="text-text-secondary text-sm mb-3">CS106A: Programming Methodology</p>
+                    <div class="flex items-center justify-center text-xs text-text-secondary mb-3">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Completed: Aug 2024
+                    </div>
+                    <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-full">Certificate</span>
+                </div>
+
+                <!-- Egghead -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Egghead.io</h3>
+                    <p class="text-text-secondary text-sm mb-3">Advanced React Patterns</p>
+                    <div class="flex items-center justify-center text-xs text-text-secondary mb-3">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Completed: Oct 2024
+                    </div>
+                    <span class="px-3 py-1 bg-success/10 text-success text-xs font-medium rounded-full">Completed</span>
+                </div>
+
+                <!-- In Progress -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Currently Learning</h3>
+                    <p class="text-text-secondary text-sm mb-3">Next.js 14 & Server Components</p>
+                    <div class="flex items-center justify-center text-xs text-text-secondary mb-3">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        Progress: 65%
+                    </div>
+                    <span class="px-3 py-1 bg-warning/10 text-warning text-xs font-medium rounded-full">In Progress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Timeline -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Learning Journey Timeline</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Continuous skill development journey with recent additions and upcoming focus areas
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-border h-full"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- 2025 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="card">
+                                <h3 class="text-lg font-semibold text-primary mb-2">2025 - Current Focus</h3>
+                                <p class="text-text-secondary text-sm mb-3">
+                                    Diving deep into Next.js 14, Server Components, and advanced React patterns. Exploring AI integration in frontend development.
+                                </p>
+                                <div class="flex flex-wrap gap-2 justify-end">
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Next.js 14</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">Server Components</span>
+                                    <span class="px-2 py-1 bg-accent/10 text-accent text-xs rounded">AI Integration</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-success rounded-full border-4 border-background"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card">
+                                <h3 class="text-lg font-semibold text-primary mb-2">2024 - Major Milestones</h3>
+                                <p class="text-text-secondary text-sm mb-3">
+                                    Mastered TypeScript, completed AWS certification, and built several production React applications with advanced state management.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">TypeScript</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">AWS Certified</span>
+                                    <span class="px-2 py-1 bg-success/10 text-success text-xs rounded">Redux Toolkit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="card">
+                                <h3 class="text-lg font-semibold text-primary mb-2">2023 - Framework Expansion</h3>
+                                <p class="text-text-secondary text-sm mb-3">
+                                    Expanded into Vue.js ecosystem, learned modern CSS techniques, and started contributing to open-source projects.
+                                </p>
+                                <div class="flex flex-wrap gap-2 justify-end">
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">Vue.js</span>
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">Tailwind CSS</span>
+                                    <span class="px-2 py-1 bg-warning/10 text-warning text-xs rounded">Open Source</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-warning rounded-full border-4 border-background"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+
+                    <!-- 2022 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                        <div class="flex-1 pl-8">
+                            <div class="card">
+                                <h3 class="text-lg font-semibold text-primary mb-2">2022 - React Mastery</h3>
+                                <p class="text-text-secondary text-sm mb-3">
+                                    Deep dive into React ecosystem, hooks, context, and performance optimization. Built first commercial applications.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">React Hooks</span>
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Context API</span>
+                                    <span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2021 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="card">
+                                <h3 class="text-lg font-semibold text-primary mb-2">2021 - Foundation Building</h3>
+                                <p class="text-text-secondary text-sm mb-3">
+                                    Started with JavaScript fundamentals, DOM manipulation, and basic React concepts. Built first portfolio projects.
+                                </p>
+                                <div class="flex flex-wrap gap-2 justify-end">
+                                    <span class="px-2 py-1 bg-text-secondary/10 text-text-secondary text-xs rounded">JavaScript ES6+</span>
+                                    <span class="px-2 py-1 bg-text-secondary/10 text-text-secondary text-xs rounded">DOM APIs</span>
+                                    <span class="px-2 py-1 bg-text-secondary/10 text-text-secondary text-xs rounded">React Basics</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-text-secondary rounded-full border-4 border-background"></div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Trends -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Technology Trend Analysis</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Personal insights on emerging technologies and implementation experiences
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Trending Up -->
+                <div class="card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-success/10 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary">Trending Up</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-background rounded-lg">
+                            <div>
+                                <h4 class="font-semibold text-primary">Server Components</h4>
+                                <p class="text-sm text-text-secondary">Next.js 13+ paradigm shift</p>
+                            </div>
+                            <div class="flex items-center text-success">
+                                <span class="text-sm font-medium mr-1">+85%</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-background rounded-lg">
+                            <div>
+                                <h4 class="font-semibold text-primary">AI-Powered Development</h4>
+                                <p class="text-sm text-text-secondary">GitHub Copilot, ChatGPT integration</p>
+                            </div>
+                            <div class="flex items-center text-success">
+                                <span class="text-sm font-medium mr-1">+120%</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-background rounded-lg">
+                            <div>
+                                <h4 class="font-semibold text-primary">Edge Computing</h4>
+                                <p class="text-sm text-text-secondary">Vercel Edge, Cloudflare Workers</p>
+                            </div>
+                            <div class="flex items-center text-success">
+                                <span class="text-sm font-medium mr-1">+65%</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-background rounded-lg">
+                            <div>
+                                <h4 class="font-semibold text-primary">Micro-Frontends</h4>
+                                <p class="text-sm text-text-secondary">Module Federation, Single-SPA</p>
+                            </div>
+                            <div class="flex items-center text-success">
+                                <span class="text-sm font-medium mr-1">+45%</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Insights -->
+                <div class="card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary">Implementation Insights</h3>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-primary mb-2">Server Components Experience</h4>
+                            <p class="text-sm text-text-secondary mb-3">
+                                Migrated a large e-commerce platform to Next.js 14 with Server Components. Achieved 40% faster initial page loads and improved SEO scores significantly.
+                            </p>
+                            <div class="flex items-center text-xs text-success">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Production Implementation
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-primary mb-2">AI Development Tools</h4>
+                            <p class="text-sm text-text-secondary mb-3">
+                                Integrated GitHub Copilot into daily workflow. Productivity increased by ~30% for boilerplate code, but human oversight remains crucial for architecture decisions.
+                            </p>
+                            <div class="flex items-center text-xs text-warning">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Daily Usage
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold text-primary mb-2">Edge Computing Adoption</h4>
+                            <p class="text-sm text-text-secondary mb-3">
+                                Deployed API routes to Vercel Edge Functions for a global SaaS application. Reduced latency by 60% for international users with minimal complexity increase.
+                            </p>
+                            <div class="flex items-center text-xs text-accent">
+                                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                Experimental
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to See These Skills in Action?</h2>
+            <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+                Explore my project portfolio to see how these technical capabilities translate into real-world solutions
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="project_showcase.html" class="btn-accent inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    View Project Portfolio
+                </a>
+                <a href="contact_availability.html" class="btn-secondary inline-flex items-center justify-center bg-white text-primary hover:bg-gray-100">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                    Discuss Your Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M12 14l2 2 6-6" stroke="white" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold">DevFolio Pro</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Frontend Developer & Digital Craftsman specializing in creating exceptional user experiences through clean code and innovative design.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-accent transition-fast">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="project_showcase.html" class="text-gray-300 hover:text-accent transition-fast">Projects</a></li>
+                        <li><a href="skills_laboratory.html" class="text-gray-300 hover:text-accent transition-fast">Skills Lab</a></li>
+                        <li><a href="about_philosophy.html" class="text-gray-300 hover:text-accent transition-fast">About</a></li>
+                        <li><a href="developer_toolkit.html" class="text-gray-300 hover:text-accent transition-fast">Toolkit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            hello@devfolio.pro
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            San Francisco, CA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 DevFolio Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Toggle code samples
+        function toggleCodeSample(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+
+        // Animation demo
+        function animateBox(animation) {
+            const box = document.getElementById('animation-demo');
+            box.className = 'w-16 h-16 bg-accent rounded-lg transition-all duration-500 transform';
+            
+            setTimeout(() => {
+                switch(animation) {
+                    case 'bounce':
+                        box.style.animation = 'bounce 0.5s ease-in-out';
+                        break;
+                    case 'spin':
+                        box.style.animation = 'spin 1s linear';
+                        break;
+                    case 'pulse':
+                        box.style.animation = 'pulse 1s ease-in-out';
+                        break;
+                    case 'shake':
+                        box.style.animation = 'shake 0.5s ease-in-out';
+                        break;
+                }
+                
+                setTimeout(() => {
+                    box.style.animation = '';
+                }, 1000);
+            }, 100);
+        }
+
+        // API Demo
+        function fetchGitHubData() {
+            const btn = document.getElementById('fetch-btn');
+            const result = document.getElementById('api-result');
+            
+            btn.textContent = 'Loading...';
+            btn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                result.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" 
+                             alt="User avatar" 
+                             class="w-8 h-8 rounded-full">
+                        <div>
+                            <div class="font-semibold text-primary">John Developer</div>
+                            <div class="text-xs text-text-secondary">@johndev • 42 repositories</div>
+                        </div>
+                    </div>
+                `;
+                btn.textContent = 'Fetch Data';
+                btn.disabled = false;
+            }, 1500);
+        }
+
+        // Viewport demo
+        function setViewport(size) {
+            const demo = document.getElementById('viewport-demo');
+            switch(size) {
+                case 'mobile':
+                    demo.style.width = '320px';
+                    demo.style.margin = '0 auto';
+                    break;
+                case 'tablet':
+                    demo.style.width = '768px';
+                    demo.style.margin = '0 auto';
+                    break;
+                case 'desktop':
+                    demo.style.width = '100%';
+                    demo.style.margin = '0';
+                    break;
+            }
+        }
+
+        // Debounce demo
+        function debounce(func, delay) {
+            let timeoutId;
+            return function (...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => func.apply(this, args), delay);
+            };
+        }
+
+        const debouncedLog = debounce((value) => {
+            const output = document.getElementById('debounce-output');
+            if (output) {
+                output.textContent = `Debounced output: "${value}" (${new Date().toLocaleTimeString()})`;
+            }
+        }, 500);
+
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-20px); }
+            }
+            @keyframes spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            @keyframes pulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+            }
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-5px); }
+                75% { transform: translateX(5px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
