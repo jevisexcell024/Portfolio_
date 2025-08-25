@@ -11,9 +11,10 @@
 }
 .jevislab-text {
     /* flex: 1; */
+    /* text-align: center; */
     align-items: center;
     justify-content: center;
-    display: grid;
+    /* display: grid; */
 }
 .me-jev{
     align-items: center;
