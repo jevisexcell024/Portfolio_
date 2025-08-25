@@ -9,6 +9,13 @@
 .jevislab {
     padding: 90px 0;
 }
+.flex{
+    /* display: flex; */
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .jevislab-text {
     /* flex: 1; */
     /* text-align: center; */
