@@ -7,6 +7,15 @@
     scroll-padding-top: 70px;
 }   
 .jevislab {
-    /* flex: 1; */
     padding: 90px 0;
+}
+.jevislab-text {
+    /* flex: 1; */
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.me-jev{
+    align-items: center;
+    justify-content: center;
 }
