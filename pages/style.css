@@ -10,25 +10,3 @@
     padding: 90px 0;
     min-height: 50vh ;
 }
-.flex{
-  
-    gap: 60px;
-    align-items: center;
-      display: flex;
-    justify-content: center;
-}
-.jevislab-text {
-    /* flex: 1; */
-    /* text-align: center; */
-    align-items: center;
-    justify-content: center;
-   padding: 0px 190px;
-/* gap: 90px; */
-}
-.me-jev{
-    align-items: center;
-    justify-content: center;
-}
-.para{
-    width: 70%;
-}
