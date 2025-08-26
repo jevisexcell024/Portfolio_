@@ -10,10 +10,11 @@
     padding: 90px 0;
 }
 .flex{
-    /* display: flex; */
+  
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
+      display: flex;
     justify-content: center;
 }
 .jevislab-text {
