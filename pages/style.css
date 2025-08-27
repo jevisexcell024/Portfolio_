@@ -13,3 +13,9 @@ height: 50vh;
     height: auto;
     width: 100%;
 }
+.card{
+    height: auto;
+    width: auto;
+    background: #1e293b;
+
+}
