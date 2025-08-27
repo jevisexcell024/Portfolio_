@@ -5,4 +5,13 @@
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
 }   
-
+.relative img{
+height: 50vh;
+}
+.hero-animation{
+    width: 100%;
+}
+.hero-animation p{
+    height: 15vh;
+    width: 80%;
+}
