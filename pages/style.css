@@ -5,25 +5,4 @@
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
 }   
-.first-intro {
-    padding: 90px 0;
-    min-height: 50vh ;
-}
-.about-section-page {
-   min-height: 60vh;
-   background: red;
-}
-.center-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 90px;
-}
-.about-me{
-    width: 40%;
-    height: 300px;
-}
-.imagery{
-    width:70%;
-    height: auto;
-}
+
