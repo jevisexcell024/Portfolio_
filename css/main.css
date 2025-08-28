@@ -1486,8 +1486,8 @@ pre {
 }
 
 .from-warning\/50{
-  --tw-gradient-from: rgba(239, 111, 6, 0.928) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgba(236, 108, 4, 0.909) var(--tw-gradient-to-position);
+  --tw-gradient-from: rgb(237 137 54 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(237 137 54 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1852,7 +1852,7 @@ pre {
   /* Status Colors */
   --color-success: #38a169;
   /* Confident green for completed projects */
-  --color-warning: #b35406;
+  --color-warning: #ed8936;
   /* Warm orange for work-in-progress */
   --color-error: #e53e3e;
   /* Clear red for critical information */
