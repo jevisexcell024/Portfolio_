@@ -113,7 +113,7 @@ Built with ❤️ on Rocket.new
 
 
 ## Hi there 👋
-
+<!-- 
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...PodSync Pro
@@ -156,4 +156,4 @@ Here are some ideas to get you started:
 <p align="left" display="flex">
   <img src="https://streak-stats.demolab.com/?user=jevisexcell024&theme=react" width="40%"/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=jevisexcell024&theme=react-dark" width="50%" />
-</p>
+</p> -->
